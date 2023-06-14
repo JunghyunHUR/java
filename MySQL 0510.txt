@@ -1,0 +1,75 @@
+MySQL
+
+DB논리모델
+
+DB물리모델
+
+
+public class User{
+
+	private int age;
+	private String name;
+
+	public void introduce(String introduce){
+		// 자기소개를 한다
+	}
+
+	public Schedule getSchedule(){
+		//스케줄을 본다.
+		return null;
+	}
+}
+
+User 논리모델
+
+		   User
+
+	              age : int
+	          name : String
+
+	     + introduce() : void
+	+ getSchedule() : Schedule
+
+사원 논리모델
+id : int not null
+
+name : varchar(30) not null
+age : int not null
+address : varchar(40) not null
+birth_date : date null
+
+
+학원		|		|  과목
+		|		|
+학생번호 : (pk)	|		|  ID(FK)
+		|─┼─────O|<|  과목번호 : int not null
+		|		|
+주민번호		|		|  과목명
+이름		|		|  과목내용
+전화번호		|		|  수강기간
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

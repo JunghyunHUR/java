@@ -1,0 +1,57 @@
+MySQL
+
+1. ALL, ANY
+
+ALL은 가장 큰것보다 많은값을 출력
+- select 컬럼명 from 테이블명 where 조건절 All (select ......
+
+ANY는 가장 작은것보다 많은값을 출력
+- select 컬럼명 from 테이블명 where 조건절 ANY (select ......
+
+한국의 모든(ALL)도시의 인구 보다 많은 도시를 찾아 표시하라.
+
+세계의 도시 중 한국의 어떤(ANY) 도시보다 인구수가 많은 도시는?
+
+국가명이 'South Korea', 'China", 'Japan' 의 국가 코드를 찾아 
+이에 해당하는 도시의 수를 각각 표시하시오.
+
+인구가 5,000,000명이 넘어가는 도시의 이름, 국가코드, 인구수를 표시하라
+
+
+2. 집합연산 
+ * 합집합 (UNION), 교집합 (INTERSECT), 차집합 (MINUS)......
+	- MySQL 은 교집합과 차집합을 지원하지 않음
+
+ * UNION => 두 쿼리 결과값을 합쳐서 리턴
+	- select 쿼리1 Union select 쿼리2 Union select 쿼리3......
+	- 조건 : 각 쿼리의 결과 형식이 동일해야 함 (기본적으로 distinct 적용)
+	- 다른 테이블이라도 결과 형식만 일치하면 된다.
+
+ * UNION ALL => 중복을 허용하는 UNION
+
+ * INTERSECT - 두 쿼리 결과값 중 공통값만 리턴
+	- select 쿼리1 INTERSECT select 쿼리2.......
+	- 두 쿼리 결과 형식이 동일해야 한다. (기본적으로 distinct 적용)
+	- 다른 테이블이라도 결과 형식만 일치하면 된다.
+
+ * MINUS / EXCEPT - 쿼리1 결과값에서 쿼리2 결과값을 뺀 후 리턴
+	- select 쿼리1 MINUS select 쿼리2
+
+country 테이블에서 기대수명이 80 이상이고 나라와 인구가 100만 이상인 나라를 표시하시오.
+
+
+select code from country where lifeExpectancy >= 80 intersect
+select code from country where population >= 1000000;
+
+MySQL
+select code from country where lifeExpectancy >= 80 
+and Code in (select code from country where population >= 1000000);
+
+
+
+
+
+
+
+
+

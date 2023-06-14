@@ -1,0 +1,77 @@
+MySQL
+
+DDL
+
+create database 데이터베이스이름;
+
+create table 테이블이름;
+
+
+* 숫자(정수형) 타입 :
+- TINYINT(1byte) (-128~ 127 / 255)
+- SMALLINT(2byte)
+- MEDIUMINT(3byte) 
+- INT(4byte) (-21억 ~ 21억 / 43억)
+- BIGINT(8byte) (-9경 ~ 9경 / 18경)
+
+* 실수형 타입 :
+ - FLOAT
+ - DOUBLE
+ - DECIMAL
+ 쓰는 방식 : 타입(크기, 소수점이하 자리수)
+
+* 문자열 타입
+ - char(길이) = 255   char(4) - 00go 
+ - varchar(길이) = 6500   varchar(4) - go
+ 쓰는 방식 : 타입(크기)
+
+* TEXT 문자열
+ - text (최대 65000)
+ - MEDIUMTEXT
+ - LONGTEXT
+
+* 파일저장 : 
+ - binary(길이)
+ - varbinary(길이)
+
+* BLO(Binary Large Object) :
+ - BLOB (최대 65000)
+ - MEDIUMBLOB
+ - LARGEBLOB
+
+* 시간관련 타입 :
+ - date(YYYY-MM-DD)
+ - datetime(YYYY-MM-DD-HH:MM:SS)
+ - timestemp
+
+create table BusinessCard(
+	name varchar(50),
+	address varchar(255),
+	telephone varchar(20)
+);
+
+제약조건 (constraint)
+ = 입력 데이터의 제약 조건을 걸어 해당되지 않는 데이터는 입력되지 않게 하기 위함
+
+ * NOT NULL - NULL값을 받지 않음
+ * UNIQUE - 동일한 값을 입력 받지 않음
+ * PRIMARY KEY - 기본 키 (기본적으로 NOT NULL, UNIQUE)
+ * FOREIGN KEY - 왜래 키
+ * CHECK - 입력값 체크 (예 : age >= 0, MYSQL에는 없음)
+ * DEFAULT - 컬럼값이 입력되지 않을 경우 기본값을 입력
+	     (예 : default '0' -> 0이 자동으로 입력 됨)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

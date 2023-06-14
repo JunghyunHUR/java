@@ -1,0 +1,48 @@
+MySQL
+
+mysqldump -uroot -p
+	1. --all-databases > 파일이름.sql
+	2. --databases db이름 > 파일이름.sql
+	3. --데이터베이스이름 테이블이름 > 파일이름.sql
+	4. --no-data 데이터이름 테이블이름 > 파일이름.sql (스키마만 받음)
+	5. --no-create-info 데이터이름 테이블이름 > 파일이름.sql (데이터만 받음)
+	
+	6. mysql -u아이디 -p db명 < 파일이름
+	7. mysql -u아이디 -p db명 테이블명 < 파일이름
+
+
+저장 프로시저
+
+CREATE PROCEDURE 프로시저명 (인자 인자형, ....)
+
+BEGIN
+    SQL 문장
+END
+
+CALL 프로시저명;
+
+삭제 - DROP PROCEDURE
+
+
+저장 함수
+
+CREATE FUNCTION 함수명(인자 인자형, ....) RETURNS 타입
+
+BEGIN
+    SQL 문장
+END
+
+select 함수명(인자);
+
+DROP FUNCTION 함수명;
+
+
+
+
+
+
+
+
+
+
+

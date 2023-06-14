@@ -1,0 +1,48 @@
+MySQL
+
+
+JDBC
+
+		  Drivar Manager = JDBC 드라이버를 관리 Connection 구현객체를 생성
+		           |
+		    Connection = Statement.... 등의 구현객체를 생성 트랜잭션 처리,
+		           |	          DB 연결을 끊을때
+Statement ———— preparedstatement ———— Callablestatement
+DDL, DML 을	DDL, DML매개변수화한	프로시저, 함수 사용할 때
+실행할 때		SQL문을 사용할 수 있다.	
+변경되지 않는	보안성이 좋다.		
+정적 SQL문	           |
+실행시 사용	           |
+		           |
+		      ResultSet
+		DB에서 가져온 데이터를
+		읽을 때 사용
+
+
+ * DBMS 가 설치된 컴퓨터 IP주소
+   - 주소 : localhost
+   - 포트번호 : mysql - 3306 // oracle - 1521
+   - 사용자 id, pw
+   - 데이터베이스 이름
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

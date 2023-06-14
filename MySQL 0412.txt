@@ -1,0 +1,27 @@
+MySQL
+
+Database 백업
+ * mysqldump -u 아이디 -p --all-databases > 덤프파일명.sql
+ * -p --all-databases : 전체 데이터 백업
+ * -p -databases : 특정 데이터 백업
+ * -p db명 테이블명 : 특정 테이블 백업
+ * -p --no-data : 스키마만 백업
+ * -p --no-create-info : 데이터만 백업
+
+1. 전체 데이터베이스를 백업 하시오.
+2. World DB를 백업 하시오.
+3. city 테이블을 백업 하시오.
+4. country 테이블의 스키마만 백업하시오.
+5. country 테이블의 데이터만 백업하시오.
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+MYSQL
+
+
+1. 드라이버 로딩
+
+ODBC	Class.forName("sun.jdbc.odbc.jdbcOdbcDriver");	SQL-SERVER(MSSQL) 
+						드라이버 (기본제공)
+
+MYSQL	Class.forName("com.mysql.cj.jdbc.Driver");	MYSQL 드라이버
+
+ORACLE	Class.forName("oracle.jdbc.drivaer.OracleDriver"); 오라클 드라이버
+
+MariaDB	Class.forName("org.mariadb.jdbc.Driver");	mariadb드라이버
+						(mysql 복제품으로 사용법이
+						mysql과 같음)
+
+
+
+2. Connection conn = DriverManager.getConnection(이부분)
+
+	URL						ID	PASS
+					
+ODBC	"jdbc.odbc.Fried"					"sa"	""
+
+MYSQL	"jdbc.mysql://localhost:3306/데이터베이스이름"		"root"	"비밀번호"
+
+ORACLE	"jdbc.oracle.thin.@localhost:1521:SID"			"scott"	"tiger"
+
+MariaDB	"jdbc.mariadb://localhost:3306/데이터베이스이름"	"root"	"비밀번호"
+
+
+
+ * Statement
+   - Statement stmt = conn.createStatement();
+
+ * PreparedStatement
+   - PreparedStatement pstmt = conn.prepareStatement(query);
+
+
+ * 실행문
+  - int executeUpdate() : insert, update, delete
+	(결과값이 int 타입의 처리 개수를 반환한다.)
+  - ResultSet executeQuery() : select
+	(select 문의 결과 집합 - 테이블(즉, 복합배열)로 변환한다.
+	(cursor의 위치를 next() 메소드를 이용하여 확인할 수 있으며
+	next()의 리턴 타입은 boolean이다.)
+
+ * 실행 예제
+
+String sql = "select * from mytable";
+ResultSet rs = stmt.executeQuery();
+
+while(rs.next()){
+	rs.getString("컬럼명");
+	rs.getint("컬럼명");
+	rs.getFloat("컬럼명");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
