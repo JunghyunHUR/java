@@ -1,0 +1,46 @@
+JAVA
+
+Object
+
+1. Generic 은 결정되지 않은 타입을 Parameter로 처리하고 실제 사용할 때
+   Parameter를 구체적인 타입으로 대체시키는 기능
+
+public class Box <T>{
+	//field
+	public T content;
+}
+
+Box <String> box = new Box<String>();
+box.content = "안녕하세요";
+String content = box.content;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

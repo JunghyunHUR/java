@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel='stylesheet' href='style.css'>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.7/umd/popper.min.js" integrity="sha512-uaZ0UXmB7NHxAxQawA8Ow2wWjdsedpRu7nJRSoI2mjnwtY8V5YiCWavoIpo1AhWPMLiW5iEeavmA3JJ2+1idUg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+</head>
+<body>
+<h1 class="text-center my-5 pt-4 fw-bold">회원가입</h1>
+	<div class="container mt-5">
+		<form name="form" action="/web03/formend" method="post">
+			<div class="row">
+				<label class="col-3 text-end my-3">이름</label>
+				<div class="col-9 my-3">
+					<input type="text" name="username" placeholder="이름" class="form-control" />
+				</div>
+				<label class="col-3 text-end my-3">암호</label>
+				<div class="col-9 my-3">
+					<input type="password" name="userpass" placeholder="비밀번호" class="form-control" />
+				</div>
+				
+				<label class="col-3 text-end my-3">성별</label>
+				<div class="col-9 form-check my-3">
+					<label for="femail"><input type="radio" id="female" name="sex" value="여자" checked/>여자
+					</label>
+					<label for="mail"><input type="radio" id="male" name="sex" value="남자"/>남자
+					</label>
+				</div>
+				<label class="col-3 text-end my-3">좋아하는 편집기</label>
+				<div class="col-9 my-3">
+					<label><input type="checkbox" name="edit01" value="eclipse"/>Eclipse</label>
+				  	
+				  	<label><input type="checkbox" name="edit02" value="vscode"/>VS Code</label>
+				  	
+				  	<label><input type="checkbox" name="edit03" value="jbuilder"/>J builder</label>
+				  	
+				  	<label><input type="checkbox" name="edit04" value="notepad">Note pad</label>
+				  	
+				</div>
+				
+				<label class="col-3 text-end my-3">사용중인 운영체제</label>
+				<div class="col-9 my-3">
+					<select name="os">
+						<option value="">사용중인 운영체제</option>
+						<option value="windows">윈도우</option>
+						<option value="linux">리눅스</option>
+				  		<option value="macintosh">매킨토시</option>
+					</select>
+				</div>
+				<label class="col-3 text-end my-3">하실 말씀</label>
+				<div class="col-9 my-5">
+					<textarea name="content" id="content" class="form-control" cols="30" rows="10"></textarea>
+				</div>
+				
+				<div class="col-12 text-center mt-3">
+					<button type="reset" class="btn btn-danger">취소</button>
+					<button type="submit" class="btn btn-primary">전송</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>

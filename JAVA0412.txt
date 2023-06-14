@@ -1,0 +1,28 @@
+JAVA
+
+
+ * HTTP 상태 코드
+
+ - 200 : OK
+ - 302 : Moved Temporally
+ - 401 : Unauthiruzed(권한없음)
+ - 404 : Not Found
+ - 405 : Not Supported
+ - 500 : Internal Server Error
+ - 501 : Not Implemented
+ - 503 : Service Unavailable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

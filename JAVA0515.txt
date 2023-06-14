@@ -1,0 +1,113 @@
+JAVA
+
+
+Construct
+ - MultipartRequest(HttpServletRequest String)
+
+Method
+ - getContentType()
+ - getFile()
+ - getFileName()
+ - getFilesystemNme()
+ - getOriginalFileName()
+ - getParameterValues()
+
+Spring ==> 개발자들의 봄.
+
+Java se (Standard Edition)
+ - 가장 대중적인 Java 플랫폼
+
+Java ee (Enterprise Edition)
+ - JSP, Servlet, jdbc, jta, .....
+
+Java me (Micro Edition)
+
+Java fx
+
+
+	MVC
+
+DI	       Interface
+느슨한 결합과 인터페이스
+DI, 결합력
+
+Spring
+
+Java se
+
+
+
+// 강한 결합 (Tight Coupling)
+
+public class Car{
+
+    // private GasolineEngine gasolineEngine = new GasolineEngine();
+    private ElectricEngine electricEngine = new ElectricEngine();
+
+    public void ride(){
+        // gasolineEngine.useOil();
+        electricEngine.useSource();
+    }
+}
+public class ElectricEngine{
+    public void useBettery(){
+
+    }
+}
+public class GasolineEngine{
+
+    public void useOil(){
+
+    }
+}
+
+
+
+public interface PowerUnit{
+    void useSource();
+}
+public class GasolineEngine implements PowerUnit{
+    @Override
+    public void useSource(){가솔린 엔진 운영}
+}
+public class ElectricEngine implements PowerUnit{
+    @Override
+    public void useSource(){전기 엔진 운영}
+}
+
+
+DI (Dependency Injection) --> 종속성 주입 (부품들을 조립)
+
+//일체형 has a 관계
+class A{
+	private B b;
+	public A(){
+		b = new B(); //
+	}
+}
+
+class A{
+	private B b;
+	public A(){
+	
+	}
+	public void setB(B b){
+		this.b = b;
+	}
+}
+
+B b = new B();
+A a = new A();
+a.setB(b);
+
+B b = newB();
+A a = newA(b);
+
+
+IOC Container  (Inversion of Control) Container
+
+
+
+
+
+

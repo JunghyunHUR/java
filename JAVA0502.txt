@@ -1,0 +1,51 @@
+JAVA
+
+Generic
+
+public class 클래스명 <A, B> {
+	private A field;
+	public B void method(B var){
+	
+	}
+}
+
+클래스명 <String, int> st = new 클래스명<>();
+
+Generic method
+1. 타입 파라미터를 가지고 있는 메소드.
+2. 선언부에 타입파라미터가 정의된다.(제네릭 타입과 다른점)
+
+public <A, B, ....> returnType method(매개변수, ...){...}
+
+ex) 
+public <T> Box<T> boxing(T t){ ... }
+
+Box<Integer> box1 = boxing(100);
+Box<String> box2 = boxing("문자열");
+
+
+경우에 따라 타입변환을 제한할 필요가 있는 경우가 있다.
+예를 들어 숫자를 연산하는 Generic이라면 Type으로 Number Type 또는 그 자식 타입으로
+제한할 필요가 있다.
+
+이럴경우
+public <T extends 상위타입> returnType Method(매개변수, ...) { ... }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

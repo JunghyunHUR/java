@@ -1,0 +1,56 @@
+JAVA
+
+java.util
+
+			Collection
+
+	List		Set		Map
+________________________________________________________________________________
+	ArrayList		HashSet		
+
+	Vector		TreeSet		
+
+	LinkedList			
+
+
+ArrayList (Multi Thread O)
+
+ * 가장 많이 사용되는 컬렉션
+ * ArrayList에 객체를 추가하면 내부 배열에 객체가 저장된다.
+ * 제한 없이 객체를 추가할 수 있다.
+
+List<E> list = new ArrayList<E>();
+List<E> list = new ArrayList<>();
+List list = new ArrayList();
+
+
+Vector (Multi Thread X)
+
+List<E> list = new Vector<E>();
+List<E> list = new Vector<>();
+List list = new Vector();
+
+Vector<E> list = new Vector<E>();
+Vector<E> list = new Vector<>();
+Vector list = new Vector();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,85 @@
+JAVA
+
+
+xml 파일에 미리 접속을 기록
+
+Tomcat 기본 폴더 구조
+ * 서버가 시작되는 시점에서 동작을 준비하는 xml 문서 
+	- context.xml, server.xml, tomcat-users.xml, web.xml
+
+bin - tomcat의 실행파일(binary) (.jar)
+
+common - web application 에서 공통적으로 사용하는 class 파일
+
+conf - server 전체 설정파일 폴더 (server.xml)
+
+logs - 예외 발생 사항 등의 로그저장
+
+server - server에서 사용하는 class 라이브러리
+
+temp - 임시저장 폴더
+
+webapps - web application 루트 폴더
+
+work - jsp 파일을 서블릿 형태로 변환한 java파일과 class 파일 저장
+
+
+프로젝트 폴더
+ - webapps
+	WEB-INF
+		- classes
+		- lib : jar 라이브러리
+		web.xml
+
+	META-INF
+		context.xml
+
+DB접속
+ * javax.naming
+ * javax.sql
+ * InitialContext 클래스
+
+
+JSTL Tag
+
+Object		Type				비고
+
+pageContext	${pageContext.servlet		JSP의 PageContext객체
+servletContext	Context.객체명}			ServletContext 객체
+session		${pageContext.session.객체명}	HttpSession 객체
+request		${pageContext.request.객체명}	ServletRequest 객체
+response		${pageContext.response.객체명} 	ServletResponse 객체
+param		${param.매개변수}			요청 매개변수 값 조회
+paramValues	${paramValues.매개변수명}		요청 매개변수의 값 배열 조회
+header		${header.헤더명}			HTTP헤더값 조회
+headerValues	${headerValues.헤더명}		HTTP헤더값 배열 조회
+cookie		${cookie.쿠키명}			쿠키값 조회
+initParam		${initParam.매개변수}		Context 초기화 매개변수 값
+pageScope	${pageScope.객체명}		page 보관소의 값
+requestScope	${requestScope.객체명}		request 보관소의 값
+sessionScope	${sessionScope.객체명}		session 보관소의 값
+allicationScope	${applicationScope.객체명}		application 보관소의 값
+
+
+
+
+JSTL
+
+--- Core : ///
+--- fmt : 
+--- xml
+--- Database
+--- Function
+
+
+forEach 문과 el 을 이용하여
+구구단을 화면에 출력하시오
+
+
+
+
+
+
+
+
+

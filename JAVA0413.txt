@@ -1,0 +1,33 @@
+JAVA
+
+servlet 객체 생성
+	|--------------- @PostConstruct
+       init() 호출   --최초 한 번
+	|
+service(), doGet(), doPost()  -- 요청시 매 번
+	|
+        destroy()  --마지막 한 번(지원해제, servlet수정, 서버 재가동)
+	|
+            └--------- @PreDestroy
+
+getParameter("이름") -- String
+getParameterNames() -- 열거
+getParameterValues() -- 배열
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

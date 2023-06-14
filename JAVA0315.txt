@@ -1,0 +1,179 @@
+JAVA
+
+char 타입 입력을 받아
+char 소문자인지 조사
+
+int value = 6; 2또는 3의 배수인가 조사
+
+비교 연산자 ( ==, !=, <=, <, >=, > )
+
+동등 비교 연산자는 모든 타입에 사용
+
+크기 비교 연산자는 boolean 타입 제외한 모든 기본 타입에 사용
+
+흐름 제언문인 조건문(if), 반복문(for, while)에서 주로 이용
+
+
+stack - 기본변수 저장
+hip - object 저장
+String type은 hip에 저장후 주소를 가져옴
+
+
+논리 연산자 (&&, ||, &, |, ^, !)
+논리곱(&&), 논리합(||), 배타적 논리합(^), 논리부정(!)
+피연산자는 boolean 타입만 사용 가능
+
+
+비트 연산자
+
+비트(bit) 단위로 연산 하므로 0과 1이 피연산자
+- 0과 1로 표현이 가능한 정수 타입만 비트 연산 가능
+
+
+비트 논리 연산자
+
+피 연산자가 boolean타입일 경우 일반 논리 연산자
+
+피연산자가 정수 타입일 경우 비트 논리 연산자로 사용
+
+비트 연산자는 피연산자를 int타입으로 자동 타입 변환 후 연산 수행
+
+
+int result = 1 << 3;
+
+대입 연산자 (=, +=, -=, *=, /=, %=, &=, |=, <<=, >>=, >>>=)
+오른쪽 피연산자의 값을 좌측 피연산자인 변수에 대입
+
+int score = 75;
+3항 연산을 이용하여 90이상 A 80이상 B 80미만 C 가 나오도록 출력
+
+자바 문제
+
+1. 연산자와 연산식에 대한 설명 중 틀린 것은 무엇입니까?  
+
+답 : ③
+
+① 연산자는 피연산자의 수에 따라 단항, 이항, 삼항 연산자로
+구분된다.
+② 비교 연산자와 논리 연산자의 산출 타입은boolean(true/false) 
+이다.
+③ 연산식은 하나 이상의 값은 산출할 수도 있다.
+④ 하나의 값이 올 수 있는 자리라면 연산식도 올 수 있다.
+
+
+2. 다음 코드를 실행했을 때 출력 결과는 무엇입니까?
+
+답 : ( 31 )
+
+public class Exercise02 {
+	public static void main(String[] args) {
+		int x = 10;
+		int y = 20;
+		int z = (++x) + (y--);
+		System.out.println(z);
+	}
+}
+
+
+3. 다음 코드를 실행했을 때 출력 결과는 무엇입니까?
+
+답 : ( 가 )
+
+public class Exercise03 {
+	public static void main(String[] args){
+		int score = 85;
+		String result = (!(score>90))? "가" : "나";
+		System.out.println(result);
+	}
+}
+
+
+4. 534자루의 연필을 30명의 학생들에게 똑같은 개수로
+나누어 줄 때 학생당 몇 개를 가질 수 있고, 최종적으로 몇
+개가 남는지를 구하는 코드입니다. (#1) 과 (#2) 에 들어갈
+알맞는 코드를 작성하세요
+
+답 : (#1 = pencils / students ) (#2 = pencils % students )
+
+public class Exercise04 {
+	public static void main(String[] args){
+		int pencils = 534;
+		int students = 30;
+		int pencilsPerStudent = ( #1 ) //학생 한 명이 가지는 연필 수
+		System.out.println(pencilsPerStudent);
+		int pencilsLeft = ( #2 ) //남은 연필 수
+		System.out.println(pencilsLeft);
+	}
+}
+
+
+5. 다음은 십의 자리 이하를 버리는 코드입니다. 변수
+value의 값이 356이라면 300이 나올 수 있도록 ( #1 )에
+알맞은 코드를 작성하세요 (산술 연산자만 사용하세요).
+
+답 : ( value - (value % 100) )
+
+public class Exercise05 {
+	public static void main(String[] args){
+		int value = 356;
+		System.out.println( #1 );
+	}
+}
+
+
+6. 다음 코드는 사다리꼴의 넓이를 구하는 코드입니다. 
+정확히 소수자릿수가 나올 수 있도록 ( #1 )에 알맞은 코드를
+작성하세요.
+
+답 : (double)( ( lengthTop + lengthBottom ) / 2 * height )
+
+public class Exercise06 {
+	public static void main(String[] args){
+		int lengthTop = 5;
+		int lengthBottom = 10;
+		int height = 7;
+		double area = ( #1 );
+		System.out.println(area);
+	}
+}
+
+
+7. 다음 코드는 비교 연산자와 논리 연산자의 복합
+연산식입니다. 연산식의 출력 결과를 괄호( ) 속에 넣으세요.
+
+답 : ( 1# = true ), ( 2# = false )
+
+public class Exercise07 {
+	public static void main(String[] args){
+		int x = 10;
+		int y = 5;
+		System.out.println( ( x>7 ) && ( y<=5 ) ); ------------( #
+		1 )
+		System.out.println( ( x % 3 == 2 ) || ( y%2 != 1 ) ); ------------( #
+		2 )
+	}
+}
+
+
+8. 다음은 %연산을 수행한 결과값에 10을 더하는 코드입니다. 
+NaN 값을 검사해서 올바른 결과가 출력될 수
+있도록 ( #1 )에 들어갈 NaN을 검사하는 코드를
+작성하세요.
+
+답 : ( Double.isNaN(z) )
+
+public class Exercise08 {
+	public static void main(String[] args){
+		double x = 5.0;
+		double y = 0.0;
+		double z = x % y;
+		if( #1 ){
+			System.out.println("0.0으로 나눌 수 없습니다.");
+		} else {
+			double result = z + 10;
+			System.out.println("결과 : " + result );
+		}
+	}
+}
+
+

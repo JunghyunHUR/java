@@ -1,0 +1,24 @@
+JAVA
+
+java 8 이후
+
+ 1. java.time.LocalDate
+ 2. java.time.LocalTime
+ 3. java.time.LocalDateTime
+
+// import java.time.ZoneId;
+
+// 현재날짜 구하기
+LocalDate now = LocalDate.now();
+
+// 파리의 날짜 구하기
+LocalDate parisNow = LocalDate.now(ZoneId.of("Europe/Paris");
+
+//
+
+
+java 8 이전
+ 1. java.util.Date
+ 2. java.util.Calendar
+
+

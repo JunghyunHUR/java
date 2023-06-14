@@ -1,0 +1,14 @@
+@charset "UTF-8";
+header{
+	border-bottom: 1px dashed #999;
+	text-align: center;
+}
+h1{
+	text-align: center;
+}
+footer{
+	background: #999;
+	padding: 50px;
+	border-top:1px solid #333;
+	text-align: center; 
+}

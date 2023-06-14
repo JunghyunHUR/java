@@ -1,0 +1,70 @@
+@charset "UTF-8";
+*{box-sizing: border-box;}
+body{
+	font-size: 16px;
+	color: #000;
+}
+h1,p{
+	width: 600px;
+	margin: auto;
+}
+h1{
+	text-align: center;
+	margin-bottom: 15px;
+	margin-top: 100px;
+}
+#member-form{
+	width: 600px;
+	margin: 80px auto;
+	border: 1px solid #ddd;
+	background: #efefef url(../images/404.jpg) no-repeat top center;
+	padding: 50px;
+	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
+}
+.members{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.members li{
+	margin-top: 10px;
+	margin-bottom: 10px;	
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #333;
+}
+.members li label:first-child {
+	display : inline-block;
+	width: 100px;
+	text-align: right;
+	padding-right: 20px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.members li input[type=text],
+.members li input[type=password]{
+	font-size: 16px;
+	padding: 10px 5px;
+	background: rgba(255, 255, 255, 0.7);
+	width: 60%;
+	border: 1px solid #999;
+	outline: transparent;
+	border-radius: 10px;
+}
+.members li select{
+	font-size : 18px;
+	padding : 5px 10px;
+}
+.members li label:not(:first-child){
+	margin-right: 10px
+}
+.btnbox{
+	text-align: center;
+	margin-top: 10px;
+}
+.submit{
+	padding: 5px 15px;
+	background: #ededed;
+	font-weight: bold;
+	font-size: 18px;
+}

@@ -1,0 +1,141 @@
+JAVA
+
+서블릿, JSP
+
+1. World Wide Web
+
+ * 초기
+   - 정적인 링크를 이동
+   - 정적인 데이터(HTML)
+
+ * 현재
+   - 동적인 데이터의 필요성
+   - 웹을 이용한 데이터 처리
+
+
+2. 웹 응용프로그램
+
+ * 웹 서버의 기능을 확장
+   - 서버측에 비즈니스 로직을 배포
+   - 클라이언트 측에서 웹 브라우저를 사용
+   - 웹 메일, 쇼핑, 옥션, 예약 시스템
+   - 변경 및 유지보수가 쉽다.
+
+
+3. 2-Tire
+
+ * 클라이언트 / 서버 구조
+ * TCP / IP 를 이용한 분산 네트워크 프로그램
+ * 클라이언트
+   - 개인용 컴퓨터에서 실행
+
+ * 서버
+   - 유닉스, 메인 프레임
+
+
+4. 3-Tire    or    N-Tire
+
+ * Client Tire
+   - 웹 브라우저
+   - 사용자와 상호작용하는 인터페이스
+   - HTML, css, javascript
+
+ * Middle Tire
+   - 비즈니스 로직 수행
+   - 동적인 컨텐츠 제공
+   - (CGI), ASP, PHP, JSP, 서블릿 --> 서블릿 컨테이너
+
+ * Server Tire
+   - 데이터를 저장하고 관리하는 역할
+   - Oracle, MS SQL, My SQL, DBMS
+
+
+JAR -> 패키징된 java압축파일
+
+WAR -> 패키징된 웹 응용프로그램
+
+CONTEXT - 하나의 웹 응용 프로그램
+	 - 공통된 실행 환경
+
+
+inetAddress	getLocalHost();
+
+
+form.html
+<form name = form action ="/서블릿폴더/EchoData" method="post">
+
+이름 : name
+암호 : passwd
+
+radio 성별
+name = sex > value = male, value = female
+
+좋아하는 편집기
+checkbox ==> eclipse, vscode, jbuilder, notepad
+
+사용중인 운영체제
+select => name = os value=ios value=windows......
+
+하실말씀 
+textarea = content
+
+
+
+
+인터페이스
+interface inter{
+
+
+}
+	- default
+	- public
+
+
+//인터페이스 안의 필드 : 
+
+	상수필드 public static final
+	추상메소드
+	default 메소드
+	static 메소드
+	private 메소드
+	private static 메소드
+
+
+		추상클래스	인터페이스
+키워드		abstract		interface
+
+필드		제한없음		static final(상수)
+
+접근 제어자	제한없음		public, default
+
+메소드		제한없음		abstract method
+				default method
+				static method
+				private static method
+
+상속키워드	extends		implements
+
+다중상속여부	불가능		가능
+				(클래스의 다중 구현, 인터페이스 끼리 다중 상속)
+
+공통점		1. 추상 메소드를 가지고 있어야 한다.
+		2. 인스턴스화 할 수 없다. (객체를 독립적으로 생성X)
+		3. 인터페이스 혹은 추상클래스를 상속받아 구현한 구현체의 인스턴스를
+		    사용해야 한다.
+		4. 인터페이스와 추상클래스를 구현, 상속한 클래스는 추상 메소드를 반드시
+		    구현해야 한다
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

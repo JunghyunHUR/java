@@ -1,0 +1,91 @@
+JAVA
+
+정수형
+byte -  8bit
+char - 2byte
+short - 2byte
+int - 4byte
+long - 8byte
+
+실수형
+float - 4byte
+double - 8byte
+
+논리형
+boolean - 1byte
+
+자동 타입 변환
+byte(1) < short(2) < int(4) < long(8) < float(4) < double(8)
+
+강제 타입 변환
+- 큰 타입을 작은타입 단위로 쪼개기
+- 끝의 한 부분만 작은 타입으로 강제적 변환
+
+
+자동 타입 변환
+
+byte A = 1;
+byte B = 2;
+
+int C = A + B;
+
+강제 타입 변환
+
+long longValue = 300;
+int intValue = (int) longValue;
+
+
+	byte + byte
+	char * char
+	short * short
+	int % int
+
+정수형 계산식은 정수형의 기본형인 int로 저장된다.
+byte x = 1;
+byte y = 2;
+byte result = x + y; //컴파일 에러
+inr result = x + y;
+
+float result = 1.2f + 3.4f; // float result = 4.6f;
+
+double resule = 1.2f + 3.4;
+
+int intValue = 10;
+double doubleValue = 5.5;
+double result = intValue + doubleValue;
+		10.0  + 5.5
+int result = intValue + (int) doubleValue;
+
+int x = 1;
+int y = 2;
+double result = x / y; // = 0
+double result = (double)x / y; // = 0.5
+
+String num1 = "7";
+int num2  = 3;
+
+num1 + num2 = 
+
+int value = 1 + 2 + 3; // int value = 6;
+
+String str1 = 1 + 2 + "3"; // String str1 = "33";
+
+String str2 = "1" + 2 + 3; // String str2 = "123";
+
+String str3 = "1" + (2+3); // String str3 = "15";
+
+String str = "10";
+byte v = Byte.parseByte(str);
+	Short.parseShort(str);
+	Integer.parseInt(str);
+	Long.parseInt(str);
+	Float.parseFloat(str);
+	Double.parseDouble(str);
+	Boolean.parseBoolean(str);
+
+
+
+
+
+
+

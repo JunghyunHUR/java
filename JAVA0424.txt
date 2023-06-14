@@ -1,0 +1,86 @@
+JAVA
+
+예외처리
+
+//출금액 잔고필드 --> 잔고 부족 예외발생
+
+Exception
+
+public class AAException extends [Exception | RuntimeException] {
+	public AAException(){
+
+	}
+
+	public AAException(String message){
+		super(message);
+	}
+
+}
+
+
+1. Class.forName("db클래스");
+	- mysql : com.mysql.cj.jdbc.Driver
+	- oracle : oracle.jdbc.OracleDriver
+
+
+2. Connection conn = DrivarManager.getConnection(url, id, pass);
+	- mysql url주소 : jdbc:mysql://localhost:3306/db이름
+	- oracle url주소 : jdbc:oracle:thin:@localhost:1521/db이름
+
+3. (DDL, DML)
+ - Statement 
+ - PreparedStatement (? 변수)
+
+4. excuteQuery. excuteUpdate
+
+5. ResultSet : DB에서 가져온 데이터를 읽을 때 사용
+
+
+ResultSet
+data 1	data 2	data 3 	data 4
+	데이터 없음			↓next (true)
+홍길동	30	도둑	성격 나쁨		↓next (true)
+김철수	25	경찰	성격 더나쁨	↓(false)
+	데이터 없음
+
+while(next()){
+
+}
+
+if(next(){
+		
+}
+
+
+
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

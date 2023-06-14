@@ -1,0 +1,29 @@
+JAVA
+
+EL TAG
+
+EL => Expression Language
+
+<%= a["foo"] %>	   =	${a["foo"]}      =	${a.foo}
+
+Operator : + - | * / %
+
+pageContext
+pageScope
+requestScope
+sessionScope
+applicationScope
+param
+paramValues
+header
+headerValues
+cookie
+initParams
+
+
+
+MVC --> Model View Controler
+
+
+
+

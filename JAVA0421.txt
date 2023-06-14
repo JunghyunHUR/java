@@ -1,0 +1,72 @@
+JAVA
+
+컴퓨터의 고장 : error -- (하드웨어적 문제)
+
+프로그램 오류 : 예외(Exception)
+
+ * 일반 예외 (Exception) : 컴파일러가 예외 처리 코드 여부를 검사하는 예외
+ * 실행 예외 (Runtime Exception) : 컴파일러가 예외 처리 코드 여부를 검사하지 않는 예외
+
+예외 클래스 서열
+				Throwable
+			 	       |
+			 	 Exception
+			  	       |
+	┌———————————┬————————┬————————┐
+	 |	       	            |		             |		 |
+ClassNotFoundException	InterruptedException          ...	  RuntimeException
+
+
+try{
+
+	예외 발생이 가능한 코드
+
+} catch(예외클래스 e){
+
+	예외 처리
+
+} catch(예외클래스 e){
+
+	예외처리
+
+} finally{
+
+	항상 실행;
+}
+
+
+
+Class.forName("com.mysql.jdbc.Driver");
+
+
+try{
+	method();
+}catch(ClassNotFoundException e){
+
+}
+
+public void method throws ClassNotFoundException{
+	Class.forName("java.lang.String2");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

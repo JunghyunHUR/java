@@ -1,0 +1,36 @@
+JAVA 
+
+JAVA 입출력
+
+ - 대표적인 java의 입출력 scanner, print
+ - 일반적으로 컴퓨터 입출력 용어는 input, output 이다.
+   이것을 줄여서 I/O 라고 한다.
+ - java에서는 I/O가 Stream을 통해 이루어 진다.
+
+
+Stream
+
+ - Byte 형태로 데이터를 운반하는데 사용되는 연결통로
+ - Stream은 물의 흐름과 같이 한 방향으로만 이루어지므로 입력, 출력을 동시에 처리 할 수 없다.
+ - 먼저 보낸 데이터는 먼저 받는 단순한 구조로 되어있다.
+   이를 큐(Queue)의 FIFO(First In Fist Out) 구조라고 한다.
+ - 이 때 Data Stream의 시작점을 Source, 종착점을 Sink, 연결한 것을 Stream이라 표현한다.
+
+구조 : source => input stream => output stream => sink
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

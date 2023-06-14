@@ -1,0 +1,54 @@
+JAVA
+
+Interface
+
+ * 필드 : 상수(public static final)
+ * 메소드 : 
+	* public 추상 method
+
+	* public default method
+		- 추상 method는 실행부가 없지만 default method는 실행부가 있다.
+		- 선언방법은 타입 앞에 default를 붙여 주는 것이다.
+
+	* public static method
+		- 추상, default method는 구현 객체가 필요하다. 
+		- static method는 구현 객체가 필요없다. 즉, 인터페이스만으로 호출이 가능
+
+	* private method
+	* private static method
+
+
+Interface 특징
+ * 자바에서는 다중상속이 안된다. 단, 인터페이스로는 가능하다.
+ *  public class 클래스명 Implements 인터페이스1, 인터페이스2, 인터페이스3......{}
+
+
+JSP
+
+1. 지시자(페이지 속성) : <%@    %>
+2. 주석 : <%-- --%> : html 소스보기로 볼 수 없다.
+3. 선언 : <%! %> : 변수, 메소드 선언, 전역의 의미를 갖는다.
+4. 표현식 : <%= %> :결과값 출력(;이 필요없다.)
+5. 스크립트릿<% %>을 이용하여 html안에 java 코드를 작성하는 방법으로 코딩
+6. 액션태그 : <jsp:action></jsp:action> 자바빈
+
+내부 객체 : request, respones, out
+서블릿 객체 : page, config
+세션객체 : session 객체
+예외객체 : exception
+
+ - 지시자 : <%@ %>
+	- page : 해당 페이지의 전체적인 속정 지정
+	- include : 별도의 페이지를 현재 페이지에 삽입
+	- taglib : 태그라이브러리의 태그 사용
+
+
+
+
+
+
+
+
+
+
+

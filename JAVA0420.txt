@@ -1,0 +1,55 @@
+JAVA
+
+class Button {
+	public static interface ClickListener{
+		//상수 필드
+		//추상, default, static method
+		void onClick();
+	}
+}
+
+익명 클래스~~
+
+
+
+익명 객체
+
+ - 명시적 선언이 없는 클래스
+ - 익명 객체는 상속을 받거나 인터페이스를 구현해서 생성한다.
+
+ - 익명 자식 객체, 익명 구현 객체
+
+
+익명 자식 객체
+new 부모생성자(매개값){
+	// field
+	// method
+};
+
+익명 구현 객체
+ - 안드로이드와 같은 UI프로그램에서 이벤트를 처리하는 객체로 많이 사용됨
+new interface {
+	//field
+	//method
+}
+익명 구현 객체가 가져야 할 멤버 필드, 메소드는 중괄호 블록 안에서만 사용 가능.
+
+
+Exception
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

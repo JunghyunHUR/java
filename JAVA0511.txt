@@ -1,0 +1,37 @@
+JAVA
+
+GIFEncoder
+JPEGEncoder
+
+acme.com
+--> The ACME java pages.
+  --> A GIF encoder!
+
+JPG
+response.setContentType("image/jpeg");
+
+MP3
+
+response.setContentType("audio/x-mpeg");
+
+Excel 실행
+ - application/vnd.ms-excel; charset-KSC5601
+
+Excel 저장
+ - response.setHeader("Content-Disposition", "attachment;filename=엑셀파일명.xls");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
